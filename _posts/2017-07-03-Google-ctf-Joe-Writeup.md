@@ -1,5 +1,7 @@
 ---
 published: true
+layout: post
+comments: true
 ---
 ## Joe Challenge writeup: Google ctf
 
