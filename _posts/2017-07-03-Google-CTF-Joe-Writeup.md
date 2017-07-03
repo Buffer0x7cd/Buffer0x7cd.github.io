@@ -3,7 +3,7 @@ layout: post
 title: Write For Joe: google CTF
 published: true
 ---
-## Joe Challange writeup: Google ctf
+## Joe Challenge writeup: Google ctf
 
 Joe was the first of five puzzles in the Web category, and the only one classified as Easy. In essence, the challenge entailed the following:
 
