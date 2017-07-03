@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi My name is manvendra and you are on my site.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am computer science student. I usually spend my days learning how a computer systems works and nights trying to learn how to brake the system. I like particapting in CTF's. my area of interest lies is in system programming and security.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[manvendra021997@gmil.com](mailto:manvendra021997@gmail.com)
