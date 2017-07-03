@@ -12,4 +12,4 @@ I am a computer science student.I usually spend my days learning how system work
 
 ### Contact me
 
-[manvendra021997@gmil.com](mailto:manvendra021997@gmail.com)
+[Email](mailto:manvendra021997@gmail.com)
