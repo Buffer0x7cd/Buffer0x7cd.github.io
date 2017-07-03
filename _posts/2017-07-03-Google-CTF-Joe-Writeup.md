@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Joe Challenge writeup: Google ctf
 
