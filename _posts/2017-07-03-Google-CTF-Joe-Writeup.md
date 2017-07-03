@@ -43,6 +43,10 @@ But after trying a few times I am still not able to exploit this feature. So i d
 
 
 
+```https://joe.web.ctfcompetition.com/login?id_token=<User-JWT-Token> ``` 
+
+
+
 ![Screenshot from 2017-07-03 15-57-08.png](https://raw.githubusercontent.com/Buffer0x7cd/buffer0x7cd.github.io/master/_posts/Screenshot%20from%202017-07-03%2015-57-08.png)
 
 
