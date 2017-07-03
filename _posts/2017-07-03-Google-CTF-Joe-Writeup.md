@@ -1,4 +1,6 @@
 ---
+layout: post
+title: Write For Joe: google CTF
 published: true
 ---
 ## Joe Challange writeup: Google ctf
