@@ -8,7 +8,7 @@ Hi My name is manvendra and you are on my site.
 
 ### More Information
 
-I am a computer science student. I usually spend my days learning how a computer systems works and nights trying to learn how to brake the system. I like particapting in CTF's. my area of interest lies is in system programming and security.
+I am a computer science student.I usually spend my days learning how system works and nights learning how to break them. I like particapting in CTF's. my area of interest lies is in system programming and security.
 
 ### Contact me
 
