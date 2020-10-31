@@ -12,6 +12,9 @@ I am currently working as an SRE at Olacabs, Which is a Cab aggregator Service. 
 
 I occasionally Write on Medium too, You can find some of my blogs on my medium profile.
 
+### Medium.    
+
+[Medium](https://medium.com/@manav503)
 ### Contact me
 
 [Email](mailto:manvendra021997@gmail.com)
