@@ -17,7 +17,7 @@ avatar: https://avatars3.githubusercontent.com/u/16363909
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  medium: https://medium.com/@manav503
+  medium: @manav503
   email: manvendra021997@gmail.com
   facebook: roshan.singh.1048
   flickr:
@@ -27,7 +27,7 @@ footer-links:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: manav503
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/5031518/manvendra-singh
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
